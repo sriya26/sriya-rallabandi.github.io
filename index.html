@@ -693,6 +693,7 @@
       transform: translateY(-2px);
     }
     .proj-card.wide { grid-column: span 2; }
+    a.proj-card { color: inherit; text-decoration: none; }
 
     .proj-header {
       display: flex;
@@ -1043,7 +1044,7 @@
       <h1 class="hero-name">
         Hi, I'm <em>Sriya</em><br>Rallabandi!
       </h1>
-      <div class="hero-role">ML and Software Engineer</div>
+      <div class="hero-role"><b>ML and Software Engineer</b></div>
       <p class="hero-desc">
         Building <strong>AI-driven systems</strong> where NLP, machine learning,
         and full-stack engineering intersect with human impact.
@@ -1256,40 +1257,52 @@
     </div>
     <div class="proj-grid">
 
-      <div class="proj-card wide reveal">
+      <a href="https://github.com/sriya26/Sage" target="_blank" rel="noopener" class="proj-card wide reveal">
         <div class="proj-header">
           <div class="proj-name">Sage</div>
-          <span class="tag" style="color:var(--sage);border-color:rgba(144,176,154,0.3)">Featured</span>
+          <div style="display:flex;align-items:center;gap:0.5rem">
+            <span class="tag" style="color:var(--sage);border-color:rgba(144,176,154,0.3)">Featured</span>
+            <span class="paper-arrow">↗</span>
+          </div>
         </div>
         <p class="proj-desc">A web-based mental wellness companion for emotion tracking, reflective journaling, and light therapy. Fine-tuned DistilBERT for emotion classification achieving ~85% accuracy. Integrated an intent-aware Dialogflow chatbot for real-time personalized responses. Backed by Flask REST APIs supporting 1,000+ persistent journal entries with low-latency queries.</p>
         <div class="proj-stack">
           <span class="tag">PyTorch (DistilBERT)</span><span class="tag">Flask</span><span class="tag">MongoDB</span><span class="tag">Dialogflow</span><span class="tag">HTML/CSS</span>
         </div>
-      </div>
+      </a>
 
-      <div class="proj-card reveal">
-        <div class="proj-header"><div class="proj-name">Raksha Setu</div></div>
+      <a href="https://github.com/sriya26/Raksha-Setu" target="_blank" rel="noopener" class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-name">Raksha Setu</div>
+          <span class="paper-arrow">↗</span>
+        </div>
         <p class="proj-desc">A multipurpose disaster relief Android app connecting victims, rescue teams, and donors via real-time geolocation. Lightweight SQLite data layer plus chatbot navigation reduced manual lookup time by ~50% in simulated emergencies.</p>
         <div class="proj-stack">
           <span class="tag">Android Studio</span><span class="tag">Java</span><span class="tag">Google Maps API</span><span class="tag">SQLite</span><span class="tag">Dialogflow</span>
         </div>
-      </div>
+      </a>
 
-      <div class="proj-card reveal">
-        <div class="proj-header"><div class="proj-name">AlgoStats</div></div>
+      <a href="https://github.com/sriya26/AlgoStats" target="_blank" rel="noopener" class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-name">AlgoStats</div>
+          <span class="paper-arrow">↗</span>
+        </div>
         <p class="proj-desc">A web-based movie recommender built during Microsoft Intern Engage 2022, showcasing how ML, deep learning, and sorting algorithms power streaming platforms. Uses Bag-of-Words, KNN, and SVD. Hosted on Heroku.</p>
         <div class="proj-stack">
           <span class="tag">PyTorch</span><span class="tag">Flask</span><span class="tag">Heroku</span><span class="tag">Bootstrap</span>
         </div>
-      </div>
+      </a>
 
-      <div class="proj-card reveal">
-        <div class="proj-header"><div class="proj-name">Topic Modelling of Scientific Articles</div></div>
+      <a href="https://github.com/sriya26/Topic-Modelling" target="_blank" rel="noopener" class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-name">Topic Modelling of Scientific Articles</div>
+          <span class="paper-arrow">↗</span>
+        </div>
         <p class="proj-desc">Demonstrates how NLP techniques extract hidden themes from large text collections. Implements LDA and NMF algorithms to identify key topics and associated keywords, helping users interpret and summarise unstructured data.</p>
         <div class="proj-stack">
           <span class="tag">Gensim</span><span class="tag">NLTK</span><span class="tag">SciPy</span><span class="tag">Python</span>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
@@ -1315,7 +1328,7 @@
 
     <div class="papers-list">
 
-      <a href="https://scholar.google.com/citations?user=jL4EoCgAAAAJ&hl=en" target="_blank" rel="noopener" class="paper-item reveal">
+      <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/neurips2022/92/paper.pdf" target="_blank" rel="noopener" class="paper-item reveal">
         <div class="paper-venue-badge">
           <div class="venue-logo"><img src="uploads/neurips.png" alt="NeurIPS"></div>
           <div class="venue-year">2022</div>
@@ -1327,7 +1340,7 @@
         <div class="paper-arrow">↗</div>
       </a>
 
-      <a href="https://scholar.google.com/citations?user=jL4EoCgAAAAJ&hl=en" target="_blank" rel="noopener" class="paper-item reveal">
+      <a href="https://openaccess.thecvf.com/content/CVPR2023W/PBVS/papers/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.pdf" target="_blank" rel="noopener" class="paper-item reveal">
         <div class="paper-venue-badge">
           <div class="venue-logo"><img src="uploads/cvpr.png" alt="CVPR"></div>
           <div class="venue-year">2023</div>
@@ -1339,7 +1352,7 @@
         <div class="paper-arrow">↗</div>
       </a>
 
-      <a href="https://scholar.google.com/citations?user=jL4EoCgAAAAJ&hl=en" target="_blank" rel="noopener" class="paper-item reveal">
+      <a href="https://aclanthology.org/2023.semeval-1.171.pdf" target="_blank" rel="noopener" class="paper-item reveal">
         <div class="paper-venue-badge">
           <div class="venue-logo"><img src="uploads/acl.png" alt="ACL"></div>
           <div class="venue-year">2023</div>
@@ -1351,7 +1364,7 @@
         <div class="paper-arrow">↗</div>
       </a>
 
-      <a href="https://scholar.google.com/citations?user=jL4EoCgAAAAJ&hl=en" target="_blank" rel="noopener" class="paper-item reveal">
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30463" target="_blank" rel="noopener" class="paper-item reveal">
         <div class="paper-venue-badge">
           <div class="venue-logo"><img src="uploads/aaai.png" alt="AAAI"></div>
           <div class="venue-year">2024</div>
